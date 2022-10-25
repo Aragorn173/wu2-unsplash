@@ -1,0 +1,67 @@
+@use "reset";
+
+
+main {
+  background-color: black;
+  font-family: "Creepster";
+}
+.container {
+  display: grid;
+  gap: 1rem;
+}
+
+
+.gridtemplateareas {
+    grid-auto-rows: minmax(auto, auto);
+    grid-auto-columns: minmax(auto, auto);
+    grid-template-areas: "img1 img2 img3 img4 img5"
+                         "img6 img7 img8 img9 img10";
+  }
+  
+  .gridtemplateareas .item:nth-child(1) {
+    grid-area: img1;
+  }
+  
+  .gridtemplateareas .item:nth-child(2) {
+    grid-area: img2;
+  }
+  
+  .gridtemplateareas .item:nth-child(3) {
+    grid-area: img3;
+  }
+  
+  .gridtemplateareas .item:nth-child(4) {
+    grid-area: img4;
+  }
+  .gridtemplateareas .item:nth-child(5) {
+    grid-area: img5;
+  }
+  
+  .gridtemplateareas .item:nth-child(6) {
+    grid-area: img6;
+  }
+  
+  .gridtemplateareas .item:nth-child(7) {
+    grid-area: img7;
+  }
+  
+  .gridtemplateareas .item:nth-child(8) {
+    grid-area: img8;
+  }
+  .gridtemplateareas .item:nth-child(9) {
+    grid-area: img9;
+  }
+  
+  .gridtemplateareas .item:nth-child(10) {
+    grid-area: img10;
+  }
+
+  .textcenter {
+    text-align: center;
+    color: orange;
+  }
+
+  @font-face {
+    font-family: "Creepster";
+    src: url("/assets/fonts/Creepster-Regular.ttf");
+  }
