@@ -1,13 +1,17 @@
 @use "reset";
 
 
-main {
+.main {
   background-color: black;
   font-family: "Creepster";
 }
 .container {
   display: grid;
   gap: 1rem;
+}
+
+.grid {
+  display: grid;
 }
 
 
@@ -65,3 +69,10 @@ main {
     font-family: "Creepster";
     src: url("/assets/fonts/Creepster-Regular.ttf");
   }
+
+.countrytext {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+

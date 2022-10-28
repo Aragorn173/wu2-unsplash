@@ -1,19 +1,14 @@
 ---
 layout: base.njk
+title: land
 ---
 
-<main>
-    <div class="textcenter">
-    <h1>Data dump</h1>
-    <p>Min github user: {{ github.login }} och plats: {{ github.location }}.</p>
-    </div>
-    <div class="container gridtemplateareas">
-        {% asyncAll item in unsplash.results %}
+<main class="countrytext">
+    <h1>{{country[0].name.official}} {{country[0].name.nativeName.jpn.official}}</h1>
+    <pre class="grid gridtemplateareas">
+        {{ country | dump(2) }}
+        {% image country[0].flags.png, "japan" %}
+        {% image country[0].coatOfArms.png, "coat of arms", "100vw" %}
 
-        <div>
-            {% image item.urls.small, item.alt_description %}
-        </div>
-        {% endall %}
-
-    </div>
+    </pre>
 </main>

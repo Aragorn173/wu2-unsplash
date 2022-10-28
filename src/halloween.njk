@@ -1,0 +1,19 @@
+---
+layout: base.njk
+---
+
+<main class="main">
+    <div class="textcenter">
+    <h1>Data dump</h1>
+    <p>Min github user: {{ github.login }} och plats: {{ github.location }}.</p>
+    </div>
+    <div class="container gridtemplateareas">
+        {% asyncAll item in unsplash.results %}
+
+        <div>
+            {% image item.urls.small, item.alt_description %}
+        </div>
+        {% endall %}
+
+    </div>
+</main>
