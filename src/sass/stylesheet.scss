@@ -28,7 +28,7 @@ picture {
     grid-auto-columns: 2fr 2fr;
     grid-template-areas: " img1 img2 "
                           " img3 img4 ";
-  }
+  
   
   .gridtemplateareas .item:nth-child(1) {
     grid-area: img1;
@@ -67,7 +67,7 @@ picture {
   .gridtemplateareas .item:nth-child(10) {
     grid-area: img10;
   }
-
+}
   .textcenter {
     text-align: center;
     color: orange;
@@ -78,6 +78,8 @@ picture {
     src: url("/assets/fonts/Creepster-Regular.ttf");
   }
 
+
+
 .countrytext {
   color: white;
   text-align: center;
@@ -87,17 +89,10 @@ html {
 }
 
 @media (max-width: 400px) {
-  /*.grid{
+  .grid{
     display: flex;
     flex-direction: column;
   }
-  */
-  .gridtemplateareas {
-    grid-auto-rows: 4fr 4fr 4fr 4fr;
-    grid-auto-columns: 2fr ;
-    grid-template-areas: " img1 "
-                          " img3 "
-                          " img2 "
-                          " img4 ";
-  }
+  
+ 
 }

@@ -6,16 +6,16 @@ title: land
 <main class="countrytext">
     <h1>{{country[0].name.official}} {{country[0].name.nativeName.jpn.official}}</h1>
     <pre class="grid gridtemplateareas">
-        
+        <div>
         {% image country[0].flags.png, "japan" %}
-        
-
-        
-        {% image country[0].coatOfArms.png, "coat of arms", "100vw" %}
-               
         <p>Flag of Japan</p>
+        </div>
         
-        <p>Coat of Arms</p>
+        <div>
+        {% image country[0].coatOfArms.png, "coat of arms", "100vw" %}
+        <p>Coat of Arms</p>  
+        </div>
+        
 
 
     </pre>
