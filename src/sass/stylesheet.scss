@@ -78,13 +78,15 @@ picture {
   }
 
 
-
+.text {
+  color: white;
+}
 
 .countrytext {
   color: white;
   text-align: center;
 }
-.bcolor {
+html {
  background-color: black;
 }
 
@@ -101,5 +103,6 @@ nav > ul {
   display: flex;
   gap: 1rem;
   list-style: none;
-  padding: 0;
+  padding-bottom: 1rem;
+  margin: 0;
 }
