@@ -24,10 +24,9 @@ picture {
 }
 
 .gridtemplateareas {
-    grid-auto-rows: 4fr  4fr;
+    grid-auto-rows: 4fr;
     grid-auto-columns: 2fr 2fr;
-    grid-template-areas: " img1 img2 "
-                          " img3 img4 ";
+    grid-template-areas: " img1 img2 ";
   
   
   .gridtemplateareas .item:nth-child(1) {
@@ -80,11 +79,12 @@ picture {
 
 
 
+
 .countrytext {
   color: white;
   text-align: center;
 }
-html {
+.bcolor {
  background-color: black;
 }
 
@@ -95,4 +95,11 @@ html {
   }
   
  
+}
+
+nav > ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
 }
